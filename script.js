@@ -2,6 +2,8 @@ const button = document.getElementById('pdf-button');
 if (button) {
   const status = document.getElementById('jspdf-export-status');
   const resume = document.getElementById('main-content');
+  const desktopWidth = getComputedStyle(resume).getPropertyValue('--content-width');
+  button.dataset.captureWidth = Number.parseFloat(desktopWidth);
 
   button.addEventListener('click', async () => {
     if (button.disabled) return;
