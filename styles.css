@@ -36,6 +36,8 @@ button { font: inherit; cursor: pointer; }
 .brand span { color: var(--accent); font-weight: 600; font-size: 14px; }
 nav { display: flex; flex-wrap: wrap; gap: 0 22px; margin-left: auto; }
 nav a { font-size: 14px; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+/* The sidebar already shows skills on desktop; on phones it sits at the end, so the link stays there. */
+@media (min-width: 768px) { nav .nav-mobile-only { display: none; } }
 .pdf-actions { display: grid; justify-items: end; }
 #pdf-button {
     border: 0; border-radius: 6px; background: var(--text); color: #fff;
