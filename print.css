@@ -29,6 +29,7 @@ body {
 .skills-list { gap: 4pt; margin-top: 3pt; }
 .skill-category, .skills-list h3 { font-size: 8.5pt; }
 .skills-list p:last-child, .side-list span, .side-list p { font-size: 7.5pt; color: #444; }
+.skills-list p:last-child, .side-list p { display: block; }
 .side-list { gap: 4pt; margin-top: 3pt; font-size: 8.5pt; }
 
 .headline { font-size: 13pt; }

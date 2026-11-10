@@ -69,11 +69,13 @@ nav a { font-size: 14px; font-weight: 600; min-height: 44px; display: inline-fle
 .skills-list { margin-top: 8px; display: grid; gap: 14px; }
 .skill-category { font-size: 13px; font-weight: 700; color: var(--text); }
 .skills-list h3 { font-size: 14px; font-weight: 500; line-height: 1.55; color: var(--text); }
-.skills-list p:last-child { margin-top: 2px; font-size: 13px; line-height: 1.55; color: var(--muted); }
-.side-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; font-size: 14px; line-height: 1.55; }
+/* The screen sidebar stays a quick reference: usage notes and training summaries appear only in the PDF. */
+.skills-list p:last-child { display: none; margin-top: 2px; font-size: 13px; line-height: 1.55; color: var(--muted); }
+.side-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; font-size: 14px; line-height: 1.55; }
 .side-list strong { display: block; font-weight: 600; }
-.side-list span { display: block; color: var(--muted); font-size: 13px; }
-.side-list p { margin-top: 2px; color: var(--muted); font-size: 13px; }
+.side-list span { color: var(--muted); font-size: 13px; }
+.side-list span + span::before { content: " · "; }
+.side-list p { display: none; margin-top: 2px; color: var(--muted); font-size: 13px; }
 
 /* Main column */
 .headline { font-size: 26px; font-weight: 650; line-height: 1.45; letter-spacing: -0.02em; }
@@ -177,6 +179,7 @@ nav a { font-size: 14px; font-weight: 600; min-height: 44px; display: inline-fle
 }
 #pdf-capture .profile-details .side-section:first-child { grid-row: span 3; }
 #pdf-capture .profile-details { break-inside: avoid; }
+#pdf-capture .skills-list p:last-child, #pdf-capture .side-list p { display: block; }
 #pdf-capture .project,
 #pdf-capture .more-list article,
 #pdf-capture .side-list li,
