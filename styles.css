@@ -1,45 +1,186 @@
-:root{--bg:#f5f7fa;--surface:#fff;--text:#172033;--muted:#475569;--accent:#1d4ed8;--border:#cbd5e1;--content-width:1040px;--resume-font-size:17px;--heading-fluid-unit:1vw}*{box-sizing:border-box}html{scroll-padding-top:20px}body{margin:0;background:var(--bg);color:var(--text);font:var(--resume-font-size)/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;word-break:keep-all;overflow-wrap:anywhere}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.skip-link{position:absolute;left:16px;top:-100px;background:#fff;padding:10px;z-index:10}.skip-link:focus{top:10px}.container,.header-inner{width:min(100% - 64px,var(--content-width));margin:auto}.site-header{border-bottom:1px solid var(--border);background:#fff}.header-inner{min-height:76px;display:flex;align-items:center;gap:32px}.brand{font-size:14px;letter-spacing:.14em;font-weight:800}.brand span{color:var(--accent)}nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-left:auto}nav a{font-size:14px;font-weight:650;min-height:44px;display:inline-flex;align-items:center}button{font:inherit;cursor:pointer}#pdf-button{border:1px solid var(--border);background:white;border-radius:4px;color:var(--text);font-size:13px;font-weight:650;padding:10px 14px;min-height:44px}#pdf-button:hover{border-color:var(--accent)}.hero{padding:100px 0 90px;border-bottom:1px solid var(--text)}.hero-label,.section-heading span{font-size:12px;letter-spacing:.13em;font-weight:750;color:var(--accent)}.hero-label{display:flex;align-items:center;gap:10px}.dot{width:8px;height:8px;background:var(--accent);border-radius:50%}.label-line{width:38px;height:1px;background:var(--border)}h1,h2,h3,p{margin:0}h1{font-size:clamp(36px,calc(5 * var(--heading-fluid-unit)),44px);line-height:1.2;letter-spacing:-.045em;margin-top:27px}.role{font-weight:650;color:var(--accent);margin-top:12px}.headline{font-size:clamp(23px,calc(3 * var(--heading-fluid-unit)),31px);font-weight:750;line-height:1.4;letter-spacing:-.04em;margin-top:47px}.hero-summary{max-width:72ch;color:var(--muted);margin-top:18px}.hero-summary p+p{margin-top:13px}.section{padding:64px 0;border-bottom:1px solid var(--border)}.section-heading{margin-bottom:32px}.section-heading h2{font-size:28px;letter-spacing:-.04em;line-height:1.35;margin-top:7px}h3{font-size:21px;line-height:1.45;letter-spacing:-.025em}.strength-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.strength-grid article{border-top:2px solid var(--accent);padding-top:20px}.strength-grid h3{font-size:18px}.strength-grid p,.more-list p,.skills-grid p{color:var(--muted);margin-top:10px}.section-body{max-width:850px}.resume-list{padding-left:20px;margin:12px 0 0}.resume-list li{padding-left:4px;margin:8px 0}.resume-list li::marker{color:var(--accent)}.project{padding:35px 0;border-top:1px solid var(--border)}.project:last-child{padding-bottom:0}.project-header{display:flex;gap:20px;align-items:baseline}.project-number{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.1em}.project-body{margin-left:44px;margin-top:20px;max-width:850px}dl{margin:0}dl>div{display:grid;grid-template-columns:100px 1fr;gap:16px;margin:14px 0}dt{font-size:14px;font-weight:750;color:var(--muted)}dd{margin:0}dd .resume-list{margin-top:0}.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{background:#e7eefc;color:#1b3f91;padding:3px 10px;border-radius:3px;font-size:13px;font-weight:650}.more-list article{display:grid;grid-template-columns:240px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--border)}.more-list h3{font-size:18px}.more-list p{margin:0}.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}.skills-grid article{padding:20px 0;border-top:1px solid var(--border)}.skills-grid .skill-category{margin:0;color:var(--accent);font-size:12px;font-weight:750}.skills-grid h3{font-size:17px;margin-top:5px}.skills-grid p{font-size:15px;margin-top:6px}.footer{padding:30px 0 45px;color:var(--muted);font-size:12px;letter-spacing:.08em;font-weight:700}.footer .container{display:flex;justify-content:space-between;gap:20px}.footer a{min-height:44px}.section p,.section li{max-width:72ch}@media(max-width:767px){body{font-size:16px}.container,.header-inner{width:calc(100% - 40px)}.header-inner{padding:15px 0;gap:10px 20px;flex-wrap:wrap}.brand{margin-right:auto}nav{order:3;width:100%;margin:0;gap:0 20px}#pdf-button{font-size:12px}}
-
-.assignment{margin-top:28px;padding-top:24px;border-top:1px solid var(--border)}.assignment-period{color:var(--muted);font-size:14px;margin-top:4px}.project-scope{color:var(--muted);font-size:13px;font-weight:500;line-height:1.5;margin-bottom:4px}.more-list .project-scope{font-size:12px;margin-bottom:4px}
-.project-number{flex:0 0 auto;white-space:nowrap}.project-header>div{min-width:0}
-
-.hero{padding:54px 0 46px}.hero h1{margin-top:0}.hero .headline{margin-top:24px}
-.employment{color:var(--muted);margin-top:4px}.contact-list{display:flex;flex-wrap:wrap;gap:2px 20px;margin-top:12px}
-.section{padding:44px 0}.section-heading{margin-bottom:18px}
-.assignment:first-child{margin-top:0;padding-top:0;border-top:0}
-.project{padding:20px 0}.project-body{margin-top:9px}.project-result,.project-tech{margin-top:8px}
-.project-tech{font-size:14px;color:var(--muted)}.project-intro{margin-bottom:12px}
-/* Keep mobile rules on the visible resume, outside the fixed-width capture. */
-@media (max-width: 767px) {
-    :where(#main-content) .hero { padding: 36px 0; }
-    :where(#main-content) h1 { font-size: 32px; }
-    :where(#main-content) .hero .headline { margin-top: 18px; font-size: 24px; }
-    :where(#main-content) .section { padding: 32px 0; }
-    :where(#main-content) .section-heading h2 { font-size: 25px; }
-    :where(#main-content) .strength-grid,
-    :where(#main-content) .skills-grid { grid-template-columns: 1fr; }
-    :where(#main-content) .strength-grid { gap: 25px; }
-    :where(#main-content) .project-header { gap: 14px; }
-    :where(#main-content) .project-body { margin-left: 0; }
-    :where(#main-content) dl > div { grid-template-columns: 1fr; gap: 2px; margin: 18px 0; }
-    :where(#main-content) .more-list article { grid-template-columns: 1fr; gap: 6px; }
+/* Sidebar + timeline resume layout (v13, design option C). */
+:root {
+    --bg: #ffffff;
+    --side-bg: #f8fafc;
+    --text: #1e293b;
+    --muted: #475569;
+    --accent: #c2410c;
+    --accent-soft: #fff7ed;
+    --border: #e2e8f0;
+    --content-width: 1040px;
+    --resume-font-size: 16px;
 }
+* { box-sizing: border-box; }
+html { scroll-padding-top: 20px; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: var(--resume-font-size)/1.7 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+h1, h2, h3, h4, p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+button { font: inherit; cursor: pointer; }
+.skip-link { position: absolute; left: 16px; top: -100px; background: #fff; padding: 10px; z-index: 10; }
+.skip-link:focus { top: 10px; }
+.container, .header-inner { width: min(100% - 64px, var(--content-width)); margin: auto; }
 
+/* Header */
+.site-header { border-bottom: 1px solid var(--border); background: #fff; }
+.header-inner { min-height: 68px; display: flex; align-items: center; gap: 28px; }
+.brand { font-size: 15px; font-weight: 700; display: inline-flex; align-items: baseline; gap: 8px; min-height: 44px; align-items: center; }
+.brand span { color: var(--accent); font-weight: 600; font-size: 14px; }
+nav { display: flex; flex-wrap: wrap; gap: 0 22px; margin-left: auto; }
+nav a { font-size: 14px; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
 .pdf-actions { display: grid; justify-items: end; }
-#pdf-button { white-space: nowrap; }
+#pdf-button {
+    border: 0; border-radius: 6px; background: var(--text); color: #fff;
+    font-size: 13px; font-weight: 600; padding: 10px 16px; min-height: 44px; white-space: nowrap;
+}
+#pdf-button:hover { background: #0f172a; }
 #pdf-button:disabled { cursor: wait; }
 #jspdf-export-status { max-width: 12rem; color: var(--muted); font-size: 12px; }
 #jspdf-export-status.is-error { color: #b91c1c; }
 
+/* Two-column grid: profile and details on the left, timeline on the right. */
+.resume-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    grid-template-areas: "profile main" "details main";
+    grid-template-rows: auto 1fr;
+}
+.profile, .profile-details { background: var(--side-bg); border-right: 1px solid var(--border); padding: 40px 28px; }
+.profile { grid-area: profile; padding-bottom: 8px; }
+.profile-details { grid-area: details; padding-top: 24px; }
+.resume-main { grid-area: main; min-width: 0; padding: 40px 0 56px 44px; }
+
+.profile h1 { font-size: 34px; line-height: 1.2; letter-spacing: -0.03em; }
+.role { margin-top: 8px; font-size: 17px; font-weight: 600; color: var(--accent); }
+.employment { margin-top: 4px; font-size: 14px; color: var(--muted); }
+.contact-list { margin-top: 16px; display: flex; flex-direction: column; font-size: 14px; }
+.contact-list a { min-height: 32px; display: inline-flex; align-items: center; }
+
+.side-section { padding-top: 24px; }
+.side-section h2 { font-size: 12px; letter-spacing: 0.12em; color: var(--muted); font-weight: 700; }
+.skills-list { margin-top: 8px; display: grid; gap: 14px; }
+.skill-category { font-size: 13px; font-weight: 700; color: var(--text); }
+.skills-list h3 { font-size: 14px; font-weight: 500; line-height: 1.55; color: var(--text); }
+.skills-list p:last-child { margin-top: 2px; font-size: 13px; line-height: 1.55; color: var(--muted); }
+.side-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 10px; font-size: 14px; line-height: 1.55; }
+.side-list strong { display: block; font-weight: 600; }
+.side-list span { display: block; color: var(--muted); font-size: 13px; }
+.side-list p { margin-top: 2px; color: var(--muted); font-size: 13px; }
+
+/* Main column */
+.headline { font-size: 26px; font-weight: 650; line-height: 1.45; letter-spacing: -0.02em; }
+.hero-summary { margin-top: 14px; color: var(--muted); max-width: 64ch; }
+.hero-summary p + p { margin-top: 10px; }
+.section { padding: 36px 0 0; }
+.section-heading { margin-bottom: 18px; }
+.section-heading h2 { font-size: 21px; letter-spacing: -0.02em; line-height: 1.4; }
+.section-heading h3 { font-size: 17px; margin-top: 24px; }
+.resume-list { padding-left: 18px; margin: 6px 0 0; }
+.resume-list li { margin: 5px 0; padding-left: 2px; }
+.resume-list li::marker { color: var(--accent); }
+.group-label { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--muted); }
+.project-scope { color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+/* Timeline */
+.assignment { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 4px 24px; }
+.assignment + .assignment { margin-top: 32px; }
+/* align-self: a stretched <p> would block every PDF page break beside it. */
+.assignment-period { align-self: start; font-size: 14px; font-weight: 600; color: var(--accent); line-height: 1.6; padding-top: 2px; }
+.assignment-body { border-left: 2px solid var(--border); padding: 0 0 4px 24px; min-width: 0; }
+.assignment-body > h3 { font-size: 20px; line-height: 1.45; letter-spacing: -0.02em; }
+.case-list, .extra-list { margin-top: 18px; }
+
+/* Number and scope share the first line; the title always starts at the left edge with the body. */
+.project-header { display: flex; flex-wrap: wrap; gap: 0 10px; align-items: baseline; }
+.project-header > div { display: contents; }
+.project-header h3, .project-header h4 { flex: 1 1 100%; min-width: 0; }
+.project-number { flex: 0 0 auto; white-space: nowrap; color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: 0.06em; }
+.project h3, .project h4 { font-size: 17px; line-height: 1.5; letter-spacing: -0.015em; }
+.project-body { margin-top: 6px; }
+.project-result { margin-top: 8px; }
+.project-result strong { color: var(--accent); margin-right: 4px; }
+.project-tech { margin-top: 6px; font-size: 13px; color: var(--muted); }
+.case-list .project { background: var(--accent-soft); border-radius: 10px; padding: 16px 18px; margin-top: 10px; }
+
+.more-list article { padding: 12px 0; border-top: 1px solid var(--border); }
+.more-list .group-label + article { margin-top: 8px; }
+.more-list h3, .more-list h4 { font-size: 15px; line-height: 1.55; }
+.more-list p { margin-top: 2px; font-size: 15px; color: var(--muted); }
+
+.project-intro { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
+.personal-project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.personal-project-list .project { border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; font-size: 15px; }
+
+/* Kept for optional sections (strengths, personal skills). */
+.strength-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.strength-grid h3 { font-size: 17px; }
+.strength-grid p { color: var(--muted); margin-top: 6px; }
+.skills-grid { display: grid; gap: 10px; }
+.skills-grid .skill-category { color: var(--accent); }
+.skills-grid h3 { font-size: 15px; }
+.skills-grid p { font-size: 14px; color: var(--muted); }
+
+.footer { padding: 28px 0 44px; color: var(--muted); font-size: 13px; font-weight: 600; border-top: 1px solid var(--border); }
+.footer .container { display: flex; justify-content: space-between; gap: 20px; }
+.footer a { min-height: 44px; }
+
+@media (max-width: 767px) {
+    body { font-size: 15.5px; }
+    .container, .header-inner { width: calc(100% - 32px); }
+    .header-inner { padding: 10px 0; gap: 4px 20px; flex-wrap: wrap; }
+    .brand { margin-right: auto; }
+    nav { order: 3; width: 100%; margin: 0; gap: 0 20px; }
+    #pdf-button { font-size: 12px; }
+}
+/* Keep mobile rules on the visible resume, outside the fixed-width capture. */
+@media (max-width: 767px) {
+    :where(#main-content).resume-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "profile" "main" "details"; grid-template-rows: auto; }
+    :where(#main-content) .profile,
+    :where(#main-content) .profile-details { border-right: 0; border-radius: 10px; padding: 24px 20px; }
+    :where(#main-content) .profile { margin-top: 16px; }
+    :where(#main-content) .profile-details { margin-top: 32px; padding-top: 4px; }
+    :where(#main-content) .profile h1 { font-size: 30px; }
+    :where(#main-content) .resume-main { padding: 28px 0 0; }
+    :where(#main-content) .headline { font-size: 22px; }
+    :where(#main-content) .assignment { grid-template-columns: minmax(0, 1fr); }
+    :where(#main-content) .assignment-body { padding-left: 16px; }
+    :where(#main-content) .case-list .project { padding: 14px 14px; }
+    :where(#main-content) .personal-project-list,
+    :where(#main-content) .strength-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* The offscreen copy uses the same layout as the desktop resume. */
 #pdf-capture {
-    --heading-fluid-unit: calc(var(--content-width) / 100);
     position: absolute;
     top: 0;
     right: 100%;
     margin: 0;
     font-size: var(--resume-font-size);
 }
+/* A dense sidebar beside the timeline leaves no safe page-break lines, so the PDF stacks the columns. */
+#pdf-capture.resume-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "profile" "main" "details"; grid-template-rows: auto; }
+#pdf-capture .profile, #pdf-capture .profile-details { border-right: 0; border-radius: 10px; }
+#pdf-capture .profile { padding: 28px 32px; }
+#pdf-capture .contact-list { flex-direction: row; flex-wrap: wrap; gap: 0 24px; margin-top: 10px; }
+#pdf-capture .resume-main { padding: 32px 0 0; }
+#pdf-capture .profile-details {
+    margin-top: 36px; padding: 8px 32px 28px;
+    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; align-items: start;
+}
+#pdf-capture .profile-details .side-section:first-child { grid-row: span 3; }
+#pdf-capture .profile-details { break-inside: avoid; }
+#pdf-capture .project,
+#pdf-capture .more-list article,
+#pdf-capture .side-list li,
+#pdf-capture .skills-list article { break-inside: avoid; }
 #pdf-capture .project-header { break-inside: avoid; }
 @media print {
     #pdf-capture { display: none; }
